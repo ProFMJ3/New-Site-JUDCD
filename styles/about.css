@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* Couleur de fond */
+
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1500x400');
+    background-size: cover;
+    background-position: center;
+    color: rgba(2, 19, 75, 0.541);
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero .title {
+    font-size: 3rem;
+}
+
+.hero .description {
+    margin-top: 50px;
+    color: black;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.mission {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* Classes pour repérer les animations */
+.text-drop, .text-left, .text-right, .text-zoom {
+    opacity: 0; /* Initial state pour GSAP */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #182165 !important; /* Bleu sombre */
+    display: flex !important;
+    height: 90px;
+}
+
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: bold;
+    
+
+}
+
+.navbar .nav-link:hover {
+    color: #ccc; /* Effet hover */
+}
+
+.navbar .btn-danger {
+    background-color: #ff3b3f !important;  /* Rouge du bouton "DEVENEZ MEMBRES" */
+    transition: transform 0.2s, background-color 0.2s;
+    border: none;
+}
+
+
+
+
+.navbar .btn-danger:hover {
+    transform: scale(1.05);
+    background-color: #e62e2e !important; /* Effet hover pour le bouton rouge */
+}
+
+
+/* Ajustement du logo */
+
+.navbar-brand img {
+    max-height: 110px;
+    max-width: 120%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo a img{
+    max-width: fit-content;
+    height: fit-content;
+}
+
+
+.logo a img:hover{
+    transform: scale(1.05);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-box {
+    background-image: url('../assets/img2.png'); 
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    height: 620px;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.description-box {
+    margin: 0 auto; /* Centre horizontalement */
+    align-items: center; /* Aligne les éléments à l'intérieur si flexbox est utilisé */
+    background-size: cover;
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%; /* Largeur de la boîte */
+    max-width: 1000px; /* Largeur maximale */
+    height: 400px; /* Hauteur de la boîte */
+    color: #fff; /* Couleur du texte */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre */
+    display: flex; /* Utilisez flexbox pour aligner le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    text-align: center; /* Centre le texte */
+}
+
+
+.about-box h2 {
+    font-size: 2.5em;
+    text-align: center;
+    padding:10%;
+    color:#f0f0f0f5;
+}
+
+.about-box p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px;
+    /*color:#182165;*/
+
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre verticalement */
+    min-height: 150vh; /* Remplit la hauteur de la fenêtre */
+    padding: 0%;
+}
+
+.video-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-intro h2 {
+    font-size: 2em;
+    color: #06105f; /* Couleur du texte */
+}
+
+.video-container {
+    position: relative;
+    width: 90%; /* Largeur de la boîte */
+    max-width: 800px; /* Largeur maximale */
+    border-radius: 15px; /* Coins arrondis */
+    overflow: hidden; /* Cache les débordements */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+    background-color: white; /* Fond de la boîte */
+    opacity: 0; /* Initialement caché */
+    visibility: hidden; /* Initialement caché */
+    transition: opacity 0.5s ease, visibility 0s 0.5s; /* Transition pour l'opacité */
+}
+.background-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Vidéo d'arrière-plan derrière la vidéo du DG */
+    filter: blur(-100px); /* Réduire le flou pour un meilleur contraste */
+}
+
+.overlay {
+    position: relative;
+    z-index: 2; /* Assure que la vidéo du DG est au-dessus */
+    padding: 20px; /* Espacement interne */
+}
+
+.dg-video {
+    width: 100%; /* Ajuste à la boîte */
+    border-radius: 15px; /* Coins arrondis pour la vidéo */
+    display: block; /* Pour s'assurer qu'il prend toute la largeur */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3; /* Au-dessus de la vidéo */
+    display: none; /* Masqué par défaut */
+}

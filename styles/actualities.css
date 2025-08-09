@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #182165 !important; /* Bleu sombre */
+    display: flex !important;
+    height: 90px;
+}
+
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: bold;
+    
+
+}
+
+.navbar .nav-link:hover {
+    color: #ccc; /* Effet hover */
+}
+
+.navbar .btn-danger {
+    background-color: #ff3b3f !important;  /* Rouge du bouton "DEVENEZ MEMBRES" */
+    transition: transform 0.2s, background-color 0.2s;
+    border: none;
+}
+
+
+
+
+.navbar .btn-danger:hover {
+    transform: scale(1.05);
+    background-color: #e62e2e !important; /* Effet hover pour le bouton rouge */
+}
+
+
+/* Ajustement du logo */
+
+.navbar-brand img {
+    max-height: 110px;
+    max-width: 120%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo a img{
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.logo a img:hover{
+    transform: scale(1.05);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

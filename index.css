@@ -1,0 +1,479 @@
+/* Général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #182165 !important; /* Bleu sombre */
+    display: flex !important;
+    height: 90px;
+}
+
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: bold;
+    
+
+}
+
+.navbar .nav-link:hover {
+    color: #ccc; /* Effet hover */
+}
+
+.navbar .btn-danger {
+    background-color: #ff3b3f !important;  /* Rouge du bouton "DEVENEZ MEMBRES" */
+    transition: transform 0.2s, background-color 0.2s;
+    border: none;
+}
+
+
+
+
+.navbar .btn-danger:hover {
+    transform: scale(1.05);
+    background-color: #e62e2e !important; /* Effet hover pour le bouton rouge */
+}
+
+
+/* Ajustement du logo */
+
+.navbar-brand img {
+    max-height: 110px;
+    max-width: 120%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);  
+     
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logo a img{
+    max-width: fit-content;
+    height: fit-content;
+}
+
+.hero-section {
+    position: relative;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);  
+     
+}
+
+
+.hero-title {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 500px;
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.boutton-div{
+    display: flex;
+    margin: 70px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.part-button {
+    max-width: 50%;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.part-img {
+   /* justify-content: center; */
+    max-width: 50%; /* Limite la largeur de l'image */
+
+}
+
+
+.part-button .btn-primary {
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: #182165;
+    height: 8vh;
+    display: flex;
+    text-align: center;
+    width: 30vh;
+}
+
+.part-button .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.part-content {
+    display: flex;
+   /* width: 200%;  Limite la largeur du contenu textuel */
+    padding-left: 20px; /* Espace à gauche du texte */
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white; 
+    background-color: green; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;    
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background-color: rgb(19, 209, 19);
+
+}
+
+.btn-success:hover {
+    background-color: darkgreen; /* Couleur au survol */
+    transform: scale(1.05);
+   
+}
+
+.entete{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Section principale */
+.partnership-section {
+    background-color: #182165; /* Bleu profond */
+    color: white;
+    border: 5px solid white; /* Bordure blanche pour délimiter */
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Titre principal */
+  .partnership-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #182165; /* Couleur du texte pour le titre */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .partnership-title:hover {
+    transform: scale(1.1); /* Agrandir au survol */
+    color: #f05d52; /* Couleur rouge au survol */
+  }
+  
+  /* Texte principal */
+  .partnership-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 30px;
+    padding: 20px;
+    max-width: 900px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Image */
+  .partnership-image {
+    max-width: 100%;
+    height: 710px;
+    width: 130vh;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;     
+
+  }
+  
+  .partnership-image:hover {
+    transform: scale(1.05); /* Agrandissement subtil au survol */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Bouton */
+  .partnership-button {
+    display: inline-block;
+    
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px;
+  }
+
+  
+  
+  .partnership-button:hover {
+    background-color:transparent;
+    transform: translateY(-5px); /* Légère montée au survol */
+  }
+  
+  /* Blocs Investir, Sponsoring, Dons */
+  .partnership-box {
+    background-color: white;
+    color: #182165;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .partnership-box:hover {
+    transform: translateY(-10px); /* Monter légèrement */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Titres des blocs */
+  .partnership-box h3 {
+    font-size: 1.5rem;
+    color: #ff5722; /* Rouge vif */
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .partnership-box h3:hover {
+    transform: scale(1.1); /* Légère agrandissement au survol */
+    color: #e64a19; /* Rouge foncé au survol */
+  }
+  
+  /* Texte des blocs */
+  .partnership-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+
+  .text-danger{
+    padding: 20px;
+  }
+
+  
+/* Responsive */
+@media (max-width: 768px) {
+    .partnership-section {
+        padding: 20px;
+    }
+    .partnership-title {
+        font-size: 1.5rem;
+    }
+    .partnership-text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .partnership-image {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+    }
+    .partnership-button {
+        width: 90%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .partnership-title {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    .partnership-text {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+    .partnership-button {
+        width: 100%;
+        padding: 14px;
+    }
+    .partnership-image {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+}
+
+
+  
+
+.team-section {
+    
+    margin: 40px 0; /* Marge pour espacer la section */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.team-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Pour mettre la vidéo en arrière-plan */
+    transform: translate(-50%, -50%);
+}
+
+
+
+.team-section:hover {
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.team-section h2 {
+    font-size: 2.5rem; /* Taille du titre */
+    margin-bottom: 20px; /* Marge en bas du titre */
+}
+
+.team-section p {
+    font-size: 1.2rem; /* Taille du texte */
+    margin-bottom: 30px; /* Marge en bas du texte */
+}
+
+.team-section .row {
+    display: flex; /* Utiliser Flexbox pour les colonnes */
+    justify-content: center; /* Centrer les colonnes */
+    flex-wrap: wrap; /* Permettre aux colonnes de passer à la ligne si nécessaire */
+    
+}
+
+.team-section .col {
+    flex: 0 0 20%; 
+    margin: 20px; /* Marge entre les colonnes */
+    max-width: 300px; /* Largeur maximale des colonnes */
+    text-align: center; /* Centrer le texte */
+}
+
+.team-section img {
+    width: 120px; /* Largeur des images */
+    height: 120px; /* Hauteur des images */
+    object-fit: cover; /* Ajustement des images */
+    margin-bottom: 10px; /* Marge en bas des images */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.team-section img:hover {
+    transform: scale(1.05);
+}
+
+.team-member {
+    opacity: 0; /* Masquer les membres de l'équipe par défaut */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour la transformation et l'ombre */
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Déplacer légèrement vers le haut au survol */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour l'effet de profondeur */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-size: contain; /* Pour réduire le recadrage sur les petits écrans */
+        height: auto; /* Laissez la hauteur s'ajuster automatiquement */
+    }
+}
+
+
+
+
+.partners-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partners-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.partner-logo {
+    display: inline-block;
+    padding: 10px;
+}
+
+.partner-logo img {
+    max-height: 120px; /* taille */
+    transition: transform 0.3s;
+}
+
+.partner-logo img:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Ajustez selon le nombre de logos */
+
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espace de 10px entre les icônes */
+    display: inline-block;
+    color: black; /* Couleur noire pour les icônes */
+    font-size: 20px; /* Taille des icônes */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0011ff4b; /* Couleur au survol (vous pouvez le changer si nécessaire) */
+}
+
+.parten{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    gap: 300px;
+}
+
+
